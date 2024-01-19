@@ -20,6 +20,10 @@ plugins = {
       vim.o.background = "dark"
       vim.cmd([[colorscheme gruvbox]])
     end,
+  },
+
+  {
+    "cohama/lexima.vim"
   }
 }
 
