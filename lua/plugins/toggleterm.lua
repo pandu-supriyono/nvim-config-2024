@@ -1,8 +1,8 @@
 return {
-  'akinsho/toggleterm.nvim',
+  "akinsho/toggleterm.nvim",
   config = function() 
     require("toggleterm").setup({
-      direction = 'float',
+      direction = "float",
       open_mapping = [[<c-_>]]
     })
   end
