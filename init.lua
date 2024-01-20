@@ -24,7 +24,19 @@ plugins = {
 
   {
     "cohama/lexima.vim"
+  },
+
+  {
+    'akinsho/toggleterm.nvim',
+    config = function() 
+      require("toggleterm").setup({
+        direction = 'float',
+        open_mapping = [[<c-_>]]
+      })
+
+    end
   }
+
 }
 
 require("remap")

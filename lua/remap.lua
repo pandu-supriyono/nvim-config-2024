@@ -12,6 +12,8 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("v", "<leader>Y", "\"+Y")
 
+vim.keymap.set("n", "<leader>bd", ":bd<CR>")
+
 vim.keymap.set("n", "<Esc>", ':let @/ = ""<CR>')
 
 vim.keymap.set("n", "<C-c>", ":q<CR>")
