@@ -25,10 +25,6 @@ vim.opt.syntax = "enable"
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
-vim.diagnostic.config({
-  virtual_text = false, -- Turn off inline diagnostics
-})
-
 -- Show all diagnostics on current line in floating window
 vim.api.nvim_set_keymap(
   "n", "<Leader>e", ":lua vim.diagnostic.open_float()<CR>", 
