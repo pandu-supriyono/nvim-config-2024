@@ -42,6 +42,14 @@ return {
       local cmp_action = require("lsp-zero").cmp_action()
 
       cmp.setup({
+        sources = {
+          {
+            name = "copilot"
+          },
+          {
+            name = "nvim_lsp"
+          }
+        },
         mapping = cmp.mapping.preset.insert({
           -- `Enter` key to confirm completion
           ["<CR>"] = cmp.mapping.confirm({select = false}),
