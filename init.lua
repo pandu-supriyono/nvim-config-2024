@@ -11,34 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-plugins = {
-  {
-    "ellisonleao/gruvbox.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.o.background = "dark"
-      vim.cmd([[colorscheme gruvbox]])
-    end,
-  },
-
-  {
-    "cohama/lexima.vim"
-  },
-
-  {
-    'akinsho/toggleterm.nvim',
-    config = function() 
-      require("toggleterm").setup({
-        direction = 'float',
-        open_mapping = [[<c-_>]]
-      })
-
-    end
-  }
-
-}
-
 require("remap")
 require("options")
-require("lazy").setup(plugins)
+require("lazy").setup("plugins")
