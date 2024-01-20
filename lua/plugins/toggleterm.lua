@@ -5,6 +5,5 @@ return {
       direction = 'float',
       open_mapping = [[<c-_>]]
     })
-
   end
 }
