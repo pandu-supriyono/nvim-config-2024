@@ -45,3 +45,6 @@ vim.api.nvim_set_keymap(
 
 -- Sets line numbers in netrw
 vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
+
+-- extension settings
+vim.filetype.add({ extension = { templ = "templ" } })
