@@ -11,6 +11,24 @@ return {
 
       lsp_zero.extend_lspconfig()
 
+      lsp_zero.configure("emmet_ls", {
+        filetypes = {
+          "css",
+          "eruby",
+          "html",
+          "javascript",
+          "javascriptreact",
+          "less",
+          "sass",
+          "scss",
+          "svelte",
+          "pug",
+          "templ",
+          "typescriptreact",
+          "vue"
+        },
+    })
+
       lsp_zero.on_attach(function(client, bufnr)
         -- see :help lsp-zero-keybindings
         -- to learn the available actions
