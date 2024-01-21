@@ -66,6 +66,6 @@ return {
           ["<C-d>"] = cmp.mapping.scroll_docs(4),
         })
       })
-      end
+    end
   }
 }
