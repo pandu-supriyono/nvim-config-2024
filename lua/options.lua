@@ -27,6 +27,8 @@ vim.opt.syntax = "enable"
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
+vim.opt.cursorline = true
+
 -- Show all diagnostics on current line in floating window
 vim.api.nvim_set_keymap(
   "n", "<Leader>e", ":lua vim.diagnostic.open_float()<CR>", 
