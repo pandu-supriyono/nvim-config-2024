@@ -50,3 +50,9 @@ vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
 
 -- extension settings
 vim.filetype.add({ extension = { templ = "templ" } })
+
+-- Podfiles and podspecs are ruby files.
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "*.podspec", "Podfile" },
+  command = "set filetype=ruby",
+})
