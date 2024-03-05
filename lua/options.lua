@@ -40,3 +40,9 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   pattern = { "*.podspec", "Podfile" },
   command = "set filetype=ruby",
 })
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "*.njk" },
+  command = "set filetype=htmldjango",
+})
+
