@@ -55,7 +55,8 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
-      {"L3MON4D3/LuaSnip"}
+      {"L3MON4D3/LuaSnip"},
+      {"saadparwaiz1/cmp_luasnip"}
     },
     config = function()
       local cmp = require("cmp")
@@ -66,6 +67,11 @@ return {
           {
             name = "nvim_lsp"
           }
+        },
+        snippet = {
+          expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+          end,
         },
         mapping = cmp.mapping.preset.insert({
           -- `Enter` key to confirm completion
