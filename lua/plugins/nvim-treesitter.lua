@@ -28,6 +28,8 @@ return {
           "vim",
           "vimdoc",
           "yaml",
+          "css",
+          "scss"
         },
         highlight = { enable = true },
         indent = {
